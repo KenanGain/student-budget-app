@@ -1,5 +1,5 @@
 import { Form, NavLink } from "react-router-dom"
-import logomark from "../assets/logo.png"
+import logomark from "../assets/Logo.png"
 import { TrashIcon } from '@heroicons/react/24/solid'
 
 const Nav = ({ userName }) => {
