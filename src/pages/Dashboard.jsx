@@ -40,8 +40,8 @@ export async function dashboardAction({request}) {
   }
 
   if (_action === "login") {
-    const storedUsername = localStorage.getItem("userName");
-    const storedPassword = localStorage.getItem("password"); 
+    const storedUsername = localStorage.getItem("userName",  JSON.stringify(values.userName));
+    const storedPassword = localStorage.getItem("password",  JSON.stringify(values.password)); 
 
     if (storedUsername === values.userName && storedPassword === values.password) {
       toast.success("Login Successful!");
