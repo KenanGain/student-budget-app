@@ -57,7 +57,7 @@ return (
             onChange={ handleChange }
             />
 
-                <input type="hidden" name="_action" value="login" />
+                <input type="hidden" name="_action" value="createUser" />
 
             <button type="submit" className="btn btn--dark" >
                         <span>Login</span>
