@@ -31,8 +31,8 @@ export async function dashboardAction({request}) {
     try {
       localStorage.setItem("userName", JSON.stringify(values.userName));
       localStorage.setItem("password",  JSON.stringify(values.password)); // Storing plaintext password in local storage is not recommended for security reasons
-      localStorage.setItem("maincurrency",  "CAD");
-      localStorage.setItem("secondarycurrency",  "INR");
+      // localStorage.setItem("maincurrency",  "CAD");
+      // localStorage.setItem("secondarycurrency",  "INR");
       toast.success(`Welcome, ${values.userName}`);
     } catch (e) {
       toast.error("Error while registering user.");
