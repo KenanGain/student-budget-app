@@ -10,9 +10,9 @@ const Intro = ({ onAlreadyHaveAccount }) => {
 const [ user, setUser ] = useState({
     userName:"",
     password:"",
-    reEnterPassword:"",
-    maincurrency:"",
-    secondarycurrency:""
+    reEnterPassword:""
+    // maincurrency:"",
+    // secondarycurrency:""
     
 })
 
