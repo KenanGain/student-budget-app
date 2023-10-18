@@ -96,15 +96,14 @@ export const getSecondaryCurrency = () => {
 };
 
 export const formatCurrency = (amt) => {
-  const currency = getMainCurrency();
-  return amt.toLocaleString(undefined, { style: "currency", currency: "CAD" });
+  const currency_1 = getMainCurrency();
+  return amt.toLocaleString(undefined, { style: "currency", currency: currency_1 });
 };
 
 export const formatCurrencyChange = (amt) => {
-  const currency = getSecondaryCurrency();
-  return amt.toLocaleString(undefined, { style: "currency", currency: "INR" });
+  const currency_2 = getSecondaryCurrency();
+  return amt.toLocaleString(undefined, { style: "currency", currency: currency_2 });
 };
-
 
 
 
