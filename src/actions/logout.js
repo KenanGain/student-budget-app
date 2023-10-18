@@ -11,8 +11,8 @@ export async function logoutAction() {
   deleteItem({ key: "budgets" });
   deleteItem({ key: "expenses" });
   deleteItem({ key: "password" });  // NOTE: Storing plaintext password in local storage is NOT recommended for security reasons.
-  // deleteItem({ key: "maincurrency" });
-  // deleteItem({ key: "secondarycurrency" });
+  deleteItem({ key: "maincurrency" });
+  deleteItem({ key: "secondarycurrency" });
 
   toast.success("You’ve logged out successfully!");
 
