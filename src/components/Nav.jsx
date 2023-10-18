@@ -26,14 +26,14 @@ const Nav = ({ userName }) => {
               }}
             >
                 <div className="divbutton">
-              {/* <button type="submit" className="btn btn--warning">
-                <span>Delete User</span>
-                <TrashIcon width={20} />
-              </button> */}
-              
-              <button type="button" className="btn btn--warning">
-              <span>Logout</span>
+              <button type="submit" className="btn btn--warning">
+                <span>Log Out</span>
+                {/* <TrashIcon width={20} /> */}
               </button>
+              
+              {/* <button type="button" className="btn btn--warning">
+              <span>Logout</span>
+              </button> */}
               </div>
             </Form>
           )
