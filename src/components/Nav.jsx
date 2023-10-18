@@ -14,6 +14,7 @@ const Nav = ({ userName }) => {
           <img src={logomark} alt="" height={50} />
           <h2>Student Budget App</h2>
         </NavLink>
+          <NavLink to="/about">About</NavLink>
         {
           userName && (
             <Form
