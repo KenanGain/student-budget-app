@@ -26,8 +26,7 @@ const Nav = ({ userName }) => {
                 }
               }}
             >
-                <div className="divbutton">
-              <button type="submit" className="btn btn--warning">
+ <button type="submit" className="btn btn--warning">
                 <span>Log Out</span>
                 {/* <TrashIcon width={20} /> */}
               </button>
