@@ -1,21 +1,24 @@
+// rrd imports
 import { redirect } from "react-router-dom";
 
-import { deleteItem } from "../helper";
+// library
 import { toast } from "react-toastify";
-import axios from "axios";
 
+// helpers
+import { deleteItem } from "../helpers";
 
 export async function logoutAction() {
-  // delete user data from local storage
-  deleteItem({ key: "userName" });
-  deleteItem({ key: "budgets" });
-  deleteItem({ key: "expenses" });
-  deleteItem({ key: "password" });  // NOTE: Storing plaintext password in local storage is NOT recommended for security reasons.
-  deleteItem({ key: "maincurrency" });
-  deleteItem({ key: "secondarycurrency" });
-
-  toast.success("You’ve logged out successfully!");
-
+  // delete the user
+  deleteItem({
+    key: "userName"
+  })
+  deleteItem({
+    key: "budgets"
+  })
+  deleteItem({
+    key: "expenses"
+  })
+  toast.success("You’ve deleted your account!")
   // return redirect
-  return redirect("/");
+  return redirect("/")
 }
