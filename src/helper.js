@@ -7,7 +7,7 @@ export const wait = () => new Promise(res =>
 
 const generateRandomColor = () => {
     const existingBudgetsLength = fetchData("budgets")?. length ?? 0;
-    return `${existingBudgetsLength * 64} 60% 50%`
+    return `${existingBudgetsLength * 64} 60% 20%`
 }
 
 // Local storage
