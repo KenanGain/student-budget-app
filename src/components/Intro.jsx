@@ -127,10 +127,10 @@ const handleChange = e => {
                     </button>
                 </Form>
                 <Form>
-{/*           <button type="button" className="btn btn--dark" onClick={onAlreadyHaveAccount}>
+          <button type="button" className="btn btn--dark" onClick={onAlreadyHaveAccount}>
               <span>Already have an account ?</span>
               <UserIcon width={20} />
-          </button> */}
+          </button>
       </Form>
             </div>
             <img src={illustration} alt="Person with money" width={600} className="mainimg" />
