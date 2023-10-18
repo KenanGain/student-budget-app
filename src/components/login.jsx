@@ -59,7 +59,7 @@ return (
 
                 <input type="hidden" name="_action" value="login" />
 
-            <button type="submit" className="btn btn--dark" onClick={login}>
+            <button type="submit" className="btn btn--dark" >
                         <span>Login</span>
                         
                     </button>
